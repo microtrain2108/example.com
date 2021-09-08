@@ -3,3 +3,4 @@ microtrain2108.github.io
 .sass-cache
 /vendor
 test.php
+/config/keys.php
