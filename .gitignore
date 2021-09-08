@@ -1,3 +1,5 @@
 microtrain2108.github.io
 .gulp-scss-cache
 .sass-cache
+/vendor
+test.php
