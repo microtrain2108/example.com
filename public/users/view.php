@@ -3,6 +3,10 @@ require '../../config/keys.php';
 require '../../core/db_connect.php';
 require '../../core/session.php';
 checkSession();
+//Build the page metadata
+$meta = [];
+$meta['description'] = "User View MicroTrain2108";
+$meta['keywords'] = "user, view, MicroTrain2108";
 
 $input = filter_input_array(INPUT_GET);
 

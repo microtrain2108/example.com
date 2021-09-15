@@ -2,6 +2,10 @@
 require '../core/session.php';
 require '../core/db_connect.php';
 require '../core/About/src/Validation/Validate.php';
+//Build the page metadata
+$meta = [];
+$meta['description'] = "User Registration MicroTrain2108";
+$meta['keywords'] = "user, resgistration, MicroTrain2108";
 
 use About\Validation;
 

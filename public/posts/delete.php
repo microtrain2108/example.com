@@ -1,6 +1,10 @@
 <?php
 require '../../config/keys.php';
 require '../../core/db_connect.php';
+//Build the page metadata
+$meta = [];
+$meta['description'] = "Post Delete MicroTrain2108";
+$meta['keywords'] = "MicroTrain2108 Post Delete";
 
 $args=[
   'id'=>FILTER_UNSAFE_RAW,

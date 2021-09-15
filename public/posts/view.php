@@ -1,5 +1,9 @@
 <?php
 include '../../core/db_connect.php';
+//Build the page metadata
+$meta = [];
+$meta['description'] = "Post View MicroTrain2108";
+$meta['keywords'] = "MicroTrain2108 Post";
 
 $input = filter_input_array(INPUT_GET);
 $slug = preg_replace("/[^a-z0-9-]+/", "", $input['slug']);

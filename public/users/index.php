@@ -7,8 +7,8 @@ checkSession();
 
 //Build the page metadata
 $meta = [];
-$meta['description'] = "Users MicroTrain2105 User List";
-$meta['keywords'] = "users, MicroTrain2105, user list";
+$meta['description'] = "Users MicroTrain2108 User List";
+$meta['keywords'] = "users, MicroTrain2108, user list";
 
 $content="<h1>MicroTrains Users</h1>";
 $stmt = $pdo->query('SELECT * FROM users');

@@ -5,7 +5,8 @@ require '../core/session.php';
 checkSession();
 
 $meta=[];
-$meta['title']="MicroTrain's Blog";
+$meta['description'] = "MicroTrain2108 Site For Web Development West Loop";
+$meta['title']="MicroTrain, Site, Web Development, West Loop";
 
 $content="<h1>MicroTrains Users</h1>";
 $stmt = $pdo->query('SELECT * FROM users');

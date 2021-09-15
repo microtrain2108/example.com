@@ -1,6 +1,10 @@
 <?php
 require '../../config/keys.php';
 require '../../core/db_connect.php';
+//Build the page metadata
+$meta = [];
+$meta['description'] = "User Delete MicroTrain2108";
+$meta['keywords'] = "user, delete, MicroTrain2108";
 
 $args=[
   'id'=>FILTER_UNSAFE_RAW,
