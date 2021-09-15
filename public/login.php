@@ -10,6 +10,9 @@ $args = [
     'email'=>FILTER_SANITIZE_EMAIL,
     'password'=>FILTER_UNSAFE_RAW,
   ];
+//   Added For Errors!
+  $message=null;
+
 $input = filter_input_array(INPUT_POST, $args);  
 
 // 2. Filter the user inputs
@@ -47,7 +50,14 @@ if(!empty($input)){
             $get = filter_input_array(INPUT_GET, $args);
             $goto = !empty($get['goto'])?$get['goto']:'../public';
             header('LOCATION: ' . $goto);        }
+        
+        //   Added For Errors!
+        }else{
+        //3. If validation fails create a message, DO NOT forget to add the validation 
+        //methods to the form.
+        $message = "<div class=\"alert alert-danger\">Your form has errors!</div>";
     }
+
 }
 
 //Build the page metadata
@@ -57,6 +67,7 @@ $meta['title']="Login";
 $content = <<<EOT
 <!-- 3 Add page title -->
 <h1>{$meta['title']}</h1>
+{$message}
 
 <form method="post" autocomplete="off">
 
